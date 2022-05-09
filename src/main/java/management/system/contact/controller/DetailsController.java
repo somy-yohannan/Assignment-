@@ -29,17 +29,16 @@ public class DetailsController {
     }
 
 
-  /*  @PostMapping("/saveall")
+   @PostMapping("/saveall")
     public List<Details> saveAllDetails(@RequestBody List<Details> details) {
-        List list = new ArrayList<Details>();
-        for (Details d : details) {
-            list.add(saveDetails(d));
+        List<Details> list = new ArrayList<Details>();
+        for (Details d : list) {
+            list.add(d);
         }
-        service.saveAllDetails(details);
+        service.saveAllDetails(list);
         return details;
     }
 
-   */
 
     @GetMapping("/findall")
     public ResponseEntity<List<Details>> findAll() {
